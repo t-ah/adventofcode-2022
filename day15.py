@@ -6,7 +6,7 @@ def main():
         if y % 100000 == 0:
             print(y)
         x = find_free_x(coordinates, y)
-        if x == None:
+        if x is None:
             continue
         print(x, y, 4000000 * x + y)
         break

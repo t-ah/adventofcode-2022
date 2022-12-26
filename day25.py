@@ -23,7 +23,7 @@ def solve(file_name: str):
     print("I", target)
 
     converted = base_5(target)
-    carry = 1
+    carry = 0
     for i in reversed(range(len(converted))):
         n = converted[i]
         n += carry

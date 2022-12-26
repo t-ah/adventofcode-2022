@@ -71,6 +71,8 @@ def main():
     for valve in relevant_valves:
         valve.calculate_paths(valves)
 
+    print(best_flow(valves, frozenset(relevant_valves), 30, dict()))
+
     max_flow = 0
     cache = {}
     for valve_subset in powerset(relevant_valves):
